@@ -9,7 +9,7 @@ from telepot.namedtuple import InlineKeyboardMarkup, InlineKeyboardButton
 try:
     #Conexió amb el port d'arduino
     ser  = serial.Serial('/dev/cu.usbmodem1421', 9600)
-    bot = telepot.Bot("528094688:AAFD6ggvQY8L3R5YFYCaxWWZ3hmdDqWNydA")
+    bot = telepot.Bot("<TOKEN>"). # Replace instead with your generated TOKEN
     bot.message_loop (handle)  
     
     print('Esperant ordres ...')                        
